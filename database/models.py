@@ -37,11 +37,19 @@ class Crud:
 
     # Atualizar dados
     def put(self, id:int, nome:str, email:str, praia:str, descricao:str):
-        self.post_validate(nome, email, praia, descricao)
-        command = "UPDATE relatos SET NOME = :nome, EMAIL = :email, PRAIA = :praia, DESCRICAO = :descricao WHERE ID = :id"
-        cursor = self.connection.cursor()
-        cursor.execute(command, {'nome':nome, 'email':email, 'praia':praia, 'descricao':descricao, 'id':id})
-        cursor.close()
+        try:
+            self.post_validate(nome, email, praia, descricao)
+            if self.user_state == EstadoUser.LIBERADO:
+                command = "UPDATE relatos SET NOME = :nome, EMAIL = :email, PRAIA = :praia, DESCRICAO = :descricao WHERE ID = :id"
+                cursor = self.connection.cursor()
+                cursor.execute(command, {'nome':nome, 'email':email, 'praia':praia, 'descricao':descricao, 'id':id})
+                cursor.close()
+            else:
+                raise ValueError("Dados invalidos")
+        except ValueError as v:
+            print(v)    
+        except Exception as e:
+            print(e)
 
     # Atualizar selecionando campo
     def patch(self, id:int, dado:str, novo_dado:str):
