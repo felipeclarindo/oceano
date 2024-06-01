@@ -1,21 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=d, initial-scale=1.0">
-    <title>Oceano</title>
-    <!-- Linkando Css -->
-    <link rel="stylesheet" href="src/css/base/reset.css">
-    <link rel="stylesheet" href="src/css/components/header.css">
-    <link rel="stylesheet" href="src/css/components/footer.css">
-    <link rel="stylesheet" href="./src/css/style.css">
-    <link rel="stylesheet" href="./src/css/responsive.css">
-    <!-- Linkando Favicon -->
-    <link rel="shortcut icon" href="src/imgs/logo.png" type="image/x-icon">
-    <!-- Linkando JavaScript -->
-    <script src="./src/js/script.js" defer></script>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=d, initial-scale=1.0">
+        <title>Oceano</title>
+        <!-- Linkando Css -->
+        <link rel="stylesheet" href="src/css/base/reset.css">
+        <link rel="stylesheet" href="src/css/base/font.css">
+        <link rel="stylesheet" href="src/css/components/header.css">
+        <link rel="stylesheet" href="src/css/components/footer.css">
+        <link rel="stylesheet" href="./src/css/base/style.css">
+        <link rel="stylesheet" href="./src/css/base/responsive.css">
+        <!-- Linkando Favicon -->
+        <link rel="shortcut icon" href="src/imgs/logo.png" type="image/x-icon">
+        <!-- Importando Font Awesome -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <!-- Linkando JavaScript -->
+        <script defer src="./src/js/script.js"></script>
+    </head>
+    <body>
+        <header class="cabecalho">
+            <h1>
+                <a href="#inicio">
+                    <img class="logo" src="src/imgs/logo.png" alt="Logo">
+                </a>
+            </h1>
+            <nav class="menu">
+                <ul class="itens">
+                    <li class="item">
+                        <a href="#inicio">Inicio</a>
+                    </li>
+                    <li class="item">
+                        <a href="#informacoes">Informações</a>
+                    </li>
+                    <li class="item">
+                        <button id="btn-relate" class="btn-relate">
+                            Relate Aqui
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </body>
 </html>
