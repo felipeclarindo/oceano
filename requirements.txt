@@ -1,2 +1,4 @@
 oracledb
-bcrypt
+flask
+flas_cors
+pytest
