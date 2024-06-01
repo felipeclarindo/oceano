@@ -116,3 +116,107 @@
 .principal .sections .section .btn-relate:hover {
     opacity: 70%;
 }
+
+#modal {
+    position: fixed relative;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    margin: 0 auto;
+    width: 600px;
+    height: 700px;
+    top: 12%;
+    color: black;
+}
+
+#modal .header {
+    background-color: #0086A8;
+    padding: 35px;
+}
+
+#modal .header h1 {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+#modal .fechar {
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 25px;
+    border: none;
+    color:rgba(0, 0, 0, 0.815);
+    background-color: #0086A8;
+    font-size: 40px;
+    color: white;
+}
+
+#modal .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 18px 30px;
+}
+
+#modal .form .submit {
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    margin-top: 40px;
+    background-color: #0086A8;
+    color: white;
+    width: 170px;
+    height: 50px;
+    margin: 0 auto;
+    transition: .3s ease-in-out;
+}
+
+#modal .form .submit:hover {
+    opacity: 70%;
+}
+
+#modal .form-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#modal .form-content label {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#modal .form-content input {
+    width: 100%;
+    font-size: 17px;
+    border-radius: 8px;
+    padding: 8px;
+    border: 2px solid #dfdfdf
+}
+
+#modal .form-content textarea {
+    width: 100%;
+    font-size: 17px;
+    border-radius: 8px;
+    padding: 8px;
+    border: 2px solid #dfdfdf
+}
+
+#modal .form-content a {
+    visibility: hidden;
+}
+
+#modal .form-content.error input {
+    border-color: red;
+}
+
+#modal .form-content.error textarea {
+    border-color: red;
+}
+
+#modal .form-content.error a {
+    visibility: visible;
+    color: red;
+}
+
