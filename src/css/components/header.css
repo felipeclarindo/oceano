@@ -1,0 +1,46 @@
+.cabecalho {
+    max-width: 100vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+}
+
+.cabecalho .logo {
+    width: 70px;
+}
+
+.cabecalho .menu {
+    margin: 0 auto;
+}
+
+.cabecalho .menu .itens {
+    display: flex;
+    gap: 100px;
+}
+
+.cabecalho .menu .itens .item {
+    font-size: 24px;
+    font-weight: bold;
+    transition: .3s ease-in-out;
+}
+
+.cabecalho .menu .itens .item:hover {
+    opacity: 60%;
+    transform: scale(1.1);
+}
+
+.cabecalho .menu .item .btn-relate {
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    font-size: 24px;
+    font-weight: bold;
+    transition: .3s ease-in-out;
+    color: #0084A7
+}
+
+.cabecalho .menu .itens .item a {
+    color:#0084A7;
+}
