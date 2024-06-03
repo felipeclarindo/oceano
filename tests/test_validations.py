@@ -3,7 +3,7 @@ import sys
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from database.validations import *
+from database.tools.validations import *
 
 # Testes de validação de email
 def test_validate_email_passeds():
