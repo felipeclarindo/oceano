@@ -1,0 +1,270 @@
+.principal {
+    background-color: #0086A8;
+}
+
+.principal .banner {
+    display: inline-block;
+    position: relative;
+    max-width: 100vw;
+    width: 100%;
+    height: 330px;
+}
+
+.principal .banner img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.principal .banner h1 {
+    display: inline-block;
+    width: 100%;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: white;
+}
+
+.principal .sections {  
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.principal .sections .section > * {
+    margin-bottom: 15px;
+}
+
+.principal .sections .section h2 {
+    display: inline-block;
+    flex-wrap: wrap;
+    padding: 6px 10px 5px 14px;
+    margin: 35px 0 45px 0;
+    font-size: 35px;
+    text-align: left;
+    color: #0086A8;
+    background-color: white;
+}
+
+.principal .sections .section:nth-child(1) h2 {
+    margin-bottom: 35px;
+}
+    
+.principal .sections .section:nth-child(3) h2 {
+    margin-bottom: 45px;
+}
+
+.principal .sections .section:nth-of-type(4) h2 {
+    display: block;
+    text-align: center;    
+    padding: 10px;
+    width: 360px;
+    margin-inline: auto;
+}
+
+.principal .sections .section p {
+    font-size: 26px;
+}
+
+.principal .sections .section img {
+    width: 90%;
+    margin: 20px auto 10px auto;
+}
+
+.principal .sections .section .itens {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 20px;
+}
+
+.principal .sections .section .itens .item {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.principal .sections .section .itens .item i {
+    font-size: 40px;
+}
+
+.principal .sections .section .sub-topico { 
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.principal .sections .section .sub-topico > *{ 
+    margin-bottom: 15px;
+}
+
+.principal .sections .section .sub-topico h3 {
+    font-size: 30px;
+    color: #7DE4FF;
+    margin-bottom: 20px;
+}
+
+.principal .sections .section .btn-relate {
+    display: block;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    margin: 40px auto 60px auto;
+    text-align: center;
+    padding: 30px;
+    width: 280px;
+    height: 120px;
+    color: #0086A8;
+    cursor: pointer;
+    transition: .3s ease-out;
+}
+
+.principal .sections .section .btn-relate:hover {
+    opacity: 70%;
+}
+
+#modal {
+    position: fixed;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    margin: 0 auto;
+    width: 490px;
+    max-height: 90vh;
+    color: black;
+    z-index: 5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Ajusta para que a centralização seja exata */
+}
+
+#modal .header {
+    background-color: #0086A8;
+    padding: 30px;
+}
+
+#modal .header h1 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+#modal .fechar {
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 25px;
+    border: none;
+    color:rgba(0, 0, 0, 0.815);
+    background-color: #0086A8;    
+    font-size: 30px;
+    color: white;
+}
+
+#modal .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 18px 30px;
+}
+
+#modal .form .submit {
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    margin-top: 40px;
+    background-color: #0086A8;
+    color: white;
+    width: 170px;
+    height: 50px;
+    margin: 0 auto;
+    transition: .3s ease-in-out;
+}
+
+#modal .form .submit:hover {
+    opacity: 70%;
+}
+
+#modal .form-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#modal .form-content label {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#modal .form-content input {
+    width: 100%;
+    font-size: 17px;
+    border-radius: 8px;
+    padding: 8px;
+    border: 2px solid #dfdfdf
+}
+
+#modal .form-content textarea {
+    width: 100%;
+    font-size: 17px;
+    border-radius: 8px;
+    padding: 8px;
+    border: 2px solid #dfdfdf
+}
+
+#modal .form-content a {
+    visibility: hidden;
+}
+
+#modal .form-content.error input {
+    border-color: red;
+}
+
+#modal .form-content.error textarea {
+    border-color: red;
+}
+
+#modal .form-content.error a {
+    visibility: visible;
+    color: red;
+}
+
+.principal .alert {
+    display: none;
+    padding: 20px;
+    background-color: #f44336;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 2000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.principal .alert.success {background-color: #4CAF50;}
+.principal .alert.info {background-color: #2196F3;} 
+.principal .alert.warning {background-color: #ff9800;}
+
+.principal .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.principal.closebtn:hover {
+    color: black;
+}
