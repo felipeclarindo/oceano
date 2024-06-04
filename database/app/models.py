@@ -1,13 +1,12 @@
+from database.tools.validations import validate_descricao, validate_email, validate_name, validate_praia
+from database.tools.utils import EstadoUser, check_user_state, datetoday
 from dataclasses import dataclass
-from database.tools.validations import *
-from database.app.config import *
-from database.tools.utils import *
+from config import connect
 import json
 
 @dataclass
 class Crud:
-    def __init__(self):
-        self.connection = connect()
+    connection = connect()
 
     # Validação de dados antes do envio
     def post_validate(self, nome:str, email:str, praia:str, descricao:str):
@@ -20,17 +19,22 @@ class Crud:
 
     # Inserir dados no banco de dados
     def post(self, nome:str, email:str, praia:str, descricao:str):
-        self.post_validate(nome, email, praia, descricao)
-        if self.user_state == EstadoUser.LIBERADO:
-            command = "INSERT INTO relatos (NOME, EMAIL, PRAIA, DESCRICAO, DATA) VALUES (:1, :2, :3, :4, TO_DATE(:5, 'YYYY-MM-DD'))"
-            cursor = self.connection.cursor()
-            cursor.execute(command, (nome, email, praia, descricao, pegar_data_atual()))
-            self.connection.commit()
-            cursor.close()
-            return {"status": "success"}
-        else:
-            return {"status": "error", "message": "404"}
-
+        try:
+            self.post_validate(nome, email, praia, descricao)
+            if self.user_state == EstadoUser.LIBERADO:
+                command = "INSERT INTO relatos (NOME, EMAIL, PRAIA, DESCRICAO, DATA) VALUES (:1, :2, :3, :4, TO_DATE(:5, 'YYYY-MM-DD'))"
+                cursor = self.connection.cursor()
+                cursor.execute(command, (nome, email, praia, descricao, datetoday()))
+                self.connection.commit()
+                cursor.close()
+                return {"status": "success"}
+            else:
+                return {"status": "error", "message": "404"}
+        except ValueError as v:
+            return {"status": "error", "message": str(v)}
+        except Exception as e:
+            return {"status": "error", "message": str(e)}
+        
     # Atualizar dados
     def put(self, id:int, nome:str, email:str, praia:str, descricao:str):
         try:
@@ -56,6 +60,8 @@ class Crud:
             cursor.execute(command, {'dado':dado, 'novo_dado':novo_dado, 'id':id})
             cursor.close()
             return {"status": "success"}
+        except ValueError as v:
+            return {"status": "error", "message": str(v)}
         except Exception as e:
             return {"status": "error", "message": str(e)}
 
@@ -68,26 +74,38 @@ class Crud:
             self.connection.commit()
             cursor.close()
             return {"status": "success"}
+        except ValueError as v:
+            return {"status": "error", "message": str(v)}
         except Exception as e:
             return {"status": "error", "message": str(e)}
 
     # Obter todos os dados
     def get(self):
-        command = "SELECT * FROM relatos"
-        cursor = self.connection.cursor()
-        cursor.execute(command)
-        usuarios = cursor.fetchall()
-        cursor.close()
-        return json.dumps([dict(usuario) for usuario in usuarios])
-
+        try:
+            command = "SELECT * FROM relatos"
+            cursor = self.connection.cursor()
+            cursor.execute(command)
+            usuarios = cursor.fetchall()
+            cursor.close()
+            return {"status": "success", "message": json.dumps([dict(usuario) for usuario in usuarios])}
+        except ValueError as v:
+            return {"status": "error", "message": str(v)}
+        except Exception as e:
+            return {"status": "error", "message": str(e)}
+        
     # Obter dados por ID
     def get_with_id(self, id:int):
-        command = f"SELECT * FROM relatos WHERE ID = :id"
-        cursor = self.connection.cursor()
-        cursor.execute(command, {'id':id})
-        usuario = cursor.fetchone()
-        cursor.close()
-        return json.dumps([dict(usuario)])
+        try:
+            command = f"SELECT * FROM relatos WHERE ID = :id"
+            cursor = self.connection.cursor()
+            cursor.execute(command, {'id':id})
+            usuario = cursor.fetchone()
+            cursor.close()
+            return {"status": "success", "message": json.dumps([dict(usuario)])}
+        except ValueError as v:
+            return {"status": "error", "message": str(v)}
+        except Exception as e:
+            return {"status": "error", "message": str(e)}
     
     # Finalizando a conexão quando instancia excluida
     def __del__(self):
