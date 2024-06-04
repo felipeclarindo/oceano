@@ -4,8 +4,8 @@ from enum import StrEnum
 class EstadoUser(StrEnum):
     LIBERADO = "liberado"
     BLOQUEADO = "bloqueado"
-
-def pegar_data_atual() -> str:
+    
+def datetoday() -> str:
     data = date.today()
     return data.strftime("%Y/%m/%d")
 
