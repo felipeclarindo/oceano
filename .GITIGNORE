@@ -1,0 +1,12 @@
+# Arquivos de log
+*.log
+
+# Arquivos de cache
+__pycache__/
+
+# Arquivos de ambiente
+.env
+
+# Arquivos de configuração específicos do seu IDE
+.vscode/
+.idea/
