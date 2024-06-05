@@ -1,223 +1,250 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Oceano</title>
-        <!-- Linkando Css -->
-        <link rel="stylesheet" href="src/css/base/reset.css">
-        <link rel="stylesheet" href="src/css/base/font.css">
-        <link rel="stylesheet" href="src/css/components/header.css">
-        <link rel="stylesheet" href="src/css/components/footer.css">
-        <link rel="stylesheet" href="./src/css/base/style.css">
-        <link rel="stylesheet" href="./src/css/base/responsive.css">
-        <!-- Linkando Favicon -->
-        <link rel="shortcut icon" href="src/imgs/logo.png" type="image/x-icon">
-        <!-- Importando Font Awesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        <!-- Importando Material Icons -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <!-- Linkando JavaScript -->
-        <script defer src="./src/js/script.js"></script>
-    </head>
-    <body>
-        <header class="cabecalho">
-            <h1>
-                <a href="./index.html">
-                    <img class="logo" src="src/imgs/logo.png" alt="Logo">
-                </a>
-            </h1>
-            <button class="btn-burguer">
-                <i id="burguer" class="material-icons">menu</i>
-            </button>
-            <nav class="menu">
-                <ul class="itens">
-                    <li class="item">
-                        <a href="#inicio">Inicio</a>
-                    </li>
-                    <li class="item">
-                        <a href="#informacoes">Informações</a>
-                    </li>
-                    <li class="item">
-                        <button id="btn-relate" class="btn-relate">
-                            Relate Aqui
-                        </button>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main class="principal">
-            <div class="banner">
-                <img src="src/imgs/banner.png" alt="banner ilustrando mar">
-                <h1>Bem-vindo ao site de<br>Sustentabilidade Marinha</h1>
-            </div>
-            <section class="sections" id="inicio">
-                <section class="section">
-                    <h2>Impacto dos mares e a poluição marinha</h2>
-                    <p>Os mares e oceanos são fundamentais para a vida na
-                        Terra. Eles regulam o clima, fornecem alimentos e
-                        oxigênio, além de serem fonte de recreação e sustento
-                        para milhões de pessoas. No entanto, a poluição, a pesca
-                        predatória e a degradação dos habitats marinhos ameaçam
-                        esses ecossistemas vitais.</p>
-                    <p>A poluição marinha é um dos maiores desafios ambientais
-                        que enfrentamos. Resíduos plásticos, produtos químicos
-                        tóxicos e esgoto não tratado acabam nos oceanos,
-                        afetando a vida marinha e a saúde humana. Tartarugas
-                        marinhas, aves e mamíferos marinhos confundem plásticos
-                        com alimentos, resultando em ferimentos e mortes.</p>
-                    <img src="src/imgs/oceano.png"
-                        alt="praia com muita poluição">
-                </section>
-                <section class="section" id="informacoes">
-                    <h2>Mais informações</h2>
-                    <ul class="itens">
-                        <li class="item">
-                            <i class="material-icons">keyboard_arrow_right</i>
-                            <p>Recifes de Corais: Abrigam 25% de toda a vida
-                                marinha. Ajudam a proteger as costas de
-                                tempestades e erosão;</p>
-                        </li>
-                        <li class="item">
-                            <i class="material-icons">keyboard_arrow_right</i>
-                            <p>Manguezais e Pântanos Salgados: Filtram poluentes
-                                e servem de berçário para várias espécies de
-                                peixes e crustáceos;</p>
-                        </li>
-                        <li class="item">
-                            <i class="material-icons">keyboard_arrow_right</i>
-                            <p>Manguezais e Pântanos Salgados: Filtram poluentes
-                                e servem de berçário para várias espécies de
-                                peixes e crustáceos;</p>
-                        </li>
-                        <li class="item">
-                            <i class="material-icons">keyboard_arrow_right</i>
-                            <p>Mais de 8 milhões de toneladas de plástico acabam
-                                nos oceanos anualmente.</p>
-                        </li>
-                        <li class="item">
-                            <i class="material-icons">keyboard_arrow_right</i>
-                            <p>90% das grandes espécies de peixes estão em
-                                declínio devido à pesca excessiva.</p>
-                        </li>
-                        <li class="item">
-                            <i class="material-icons">keyboard_arrow_right</i>
-                            <p>Apenas 13% dos oceanos do mundo são considerados
-                                ecossistemas marinhos intactos.</p>
-                        </li>
-                    </ul>
-                </section>
-                <section class="section">
-                    <section class="sub-topico">
-                        <h2>Como você pode ajudar?</h2>
-                        <h3>Reduza, Reutilize e Recicle</h3>
-                        <ul class="itens">
-                            <li class="item">
-                                <i class="material-icons">keyboard_arrow_right</i>
-                                <p>Reduza o uso de plásticos descartáveis:
-                                    Substitua
-                                    sacolas, garrafas e canudos por alternativas
-                                    reutilizáveis.</p>
-                            </li>
-                            <li class="item">
-                                <i class="material-icons">keyboard_arrow_right</i>
-                                <p>Reutilize embalagens: Dê nova vida a potes,
-                                    garrafas e sacos.</p>
-                            </li>
-                            <li class="item">
-                                <i class="material-icons">keyboard_arrow_right</i>
-                                <p>Recicle corretamente: Separe os resíduos e
-                                    participe de programas de reciclagem
-                                    locais.</p>
-                            </li>
-                        </ul>
-                    </section>
-                    <section class="sub-topico">
-                        <h3>Participe de ações locais</h3>
-                        <ul class="itens">
-                            <li class="item">
-                                <i class="material-icons">keyboard_arrow_right</i>
-                                <p>Limpando praias: Participe de mutirões de
-                                    limpeza ou organize um evento com sua
-                                    comunidade.</p>
-                            </li>
-                            <li class="item">
-                                <i class="material-icons">keyboard_arrow_right</i>
-                                <p>Apoie organizações de conservação: Contribua
-                                    financeiramente ou com voluntariado.</p>
-                            </li>
-                            <li class="item">
-                                <i class="material-icons">keyboard_arrow_right</i>
-                                <p>Eduque-se e eduque outros: Compartilhe
-                                    informações e incentive práticas
-                                    sustentáveis em sua rede social.</p>
-                            </li>
-                        </ul>
-                    </section>
-                </section>
-                <section class="section">
-                    <h2>Relate Aqui</h2>
-                    <p>Visando contribuir com a melhoria das condições dos mares
-                        e oceanos do Brasil, desenvolvemos um formulário para o
-                        relato de praias em estado precário que necessitam de
-                        limpeza. Sua participação é simples e essencial.
-                        Clique no botão abaixo e preencha o formulário. Os dados
-                        fornecidos serão encaminhados para ONGs e projetos
-                        dedicados à redução da poluição em nosso país.</p>
-                    <button id="btn-relate" class="btn-relate">
-                        Abrir Form
-                    </button>
-                </section>
-            </section>
-            <dialog id="modal" class="modal">
-                <section class="header">
-                    <h1>Relate Aqui</h1>
-                    <button id="fechar" class="fechar">
-                        <i class="fas fa-times"></i>
-                    </button>
-                </section>
-                <form id="form" class="form">
-                    <div class="form-content">
-                        <label for="nome">Nome</label>
-                        <input type="text" id="nome"
-                            placeholder="Digite o seu nome..." />
-                        <a>Aqui vai a mensagem de erro</a>
-                    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oceano</title>
+    <!-- Linkando Css -->
+    <link rel="stylesheet" href="src/css/base/reset.css" />
+    <link rel="stylesheet" href="src/css/base/font.css" />
+    <link rel="stylesheet" href="src/css/components/header.css" />
+    <link rel="stylesheet" href="src/css/components/footer.css" />
+    <link rel="stylesheet" href="./src/css/base/style.css" />
+    <link rel="stylesheet" href="./src/css/base/responsive.css" />
+    <!-- Linkando Favicon -->
+    <link rel="shortcut icon" href="src/imgs/logo.png" type="image/x-icon" />
+    <!-- Importando Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- Importando Material Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <!-- Linkando JavaScript -->
+    <script defer src="./src/js/script.js"></script>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <h1>
+        <a href="./index.html">
+          <img class="logo" src="src/imgs/logo.png" alt="Logo" />
+        </a>
+      </h1>
+      <button class="btn-burguer">
+        <i id="burguer" class="material-icons">menu</i>
+      </button>
+      <nav class="menu">
+        <ul class="itens">
+          <li class="item">
+            <a href="#inicio">Inicio</a>
+          </li>
+          <li class="item">
+            <a href="#informacoes">Informações</a>
+          </li>
+          <li class="item">
+            <button class="btn-relate">Relate Aqui</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="principal">
+      <div class="banner">
+        <img src="src/imgs/banner.png" alt="banner ilustrando mar" />
+        <h1>Bem-vindo ao site de<br />Sustentabilidade Marinha</h1>
+      </div>
+      <section class="sections" id="inicio">
+        <section class="section">
+          <h2>Impacto dos mares e a poluição marinha</h2>
+          <p>
+            Os mares e oceanos são fundamentais para a vida na Terra. Eles
+            regulam o clima, fornecem alimentos e oxigênio, além de serem fonte
+            de recreação e sustento para milhões de pessoas. No entanto, a
+            poluição, a pesca predatória e a degradação dos habitats marinhos
+            ameaçam esses ecossistemas vitais.
+          </p>
+          <p>
+            A poluição marinha é um dos maiores desafios ambientais que
+            enfrentamos. Resíduos plásticos, produtos químicos tóxicos e esgoto
+            não tratado acabam nos oceanos, afetando a vida marinha e a saúde
+            humana. Tartarugas marinhas, aves e mamíferos marinhos confundem
+            plásticos com alimentos, resultando em ferimentos e mortes.
+          </p>
+          <img src="src/imgs/oceano.png" alt="praia com muita poluição" />
+        </section>
+        <section class="section" id="informacoes">
+          <h2>Mais informações</h2>
+          <ul class="itens">
+            <li class="item">
+              <i class="material-icons">keyboard_arrow_right</i>
+              <p>
+                Recifes de Corais: Abrigam 25% de toda a vida marinha. Ajudam a
+                proteger as costas de tempestades e erosão;
+              </p>
+            </li>
+            <li class="item">
+              <i class="material-icons">keyboard_arrow_right</i>
+              <p>
+                Manguezais e Pântanos Salgados: Filtram poluentes e servem de
+                berçário para várias espécies de peixes e crustáceos;
+              </p>
+            </li>
+            <li class="item">
+              <i class="material-icons">keyboard_arrow_right</i>
+              <p>
+                Manguezais e Pântanos Salgados: Filtram poluentes e servem de
+                berçário para várias espécies de peixes e crustáceos;
+              </p>
+            </li>
+            <li class="item">
+              <i class="material-icons">keyboard_arrow_right</i>
+              <p>
+                Mais de 8 milhões de toneladas de plástico acabam nos oceanos
+                anualmente.
+              </p>
+            </li>
+            <li class="item">
+              <i class="material-icons">keyboard_arrow_right</i>
+              <p>
+                90% das grandes espécies de peixes estão em declínio devido à
+                pesca excessiva.
+              </p>
+            </li>
+            <li class="item">
+              <i class="material-icons">keyboard_arrow_right</i>
+              <p>
+                Apenas 13% dos oceanos do mundo são considerados ecossistemas
+                marinhos intactos.
+              </p>
+            </li>
+          </ul>
+        </section>
+        <section class="section">
+          <section class="sub-topico">
+            <h2>Como você pode ajudar?</h2>
+            <h3>Reduza, Reutilize e Recicle</h3>
+            <ul class="itens">
+              <li class="item">
+                <i class="material-icons">keyboard_arrow_right</i>
+                <p>
+                  Reduza o uso de plásticos descartáveis: Substitua sacolas,
+                  garrafas e canudos por alternativas reutilizáveis.
+                </p>
+              </li>
+              <li class="item">
+                <i class="material-icons">keyboard_arrow_right</i>
+                <p>
+                  Reutilize embalagens: Dê nova vida a potes, garrafas e sacos.
+                </p>
+              </li>
+              <li class="item">
+                <i class="material-icons">keyboard_arrow_right</i>
+                <p>
+                  Recicle corretamente: Separe os resíduos e participe de
+                  programas de reciclagem locais.
+                </p>
+              </li>
+            </ul>
+          </section>
+          <section class="sub-topico">
+            <h3>Participe de ações locais</h3>
+            <ul class="itens">
+              <li class="item">
+                <i class="material-icons">keyboard_arrow_right</i>
+                <p>
+                  Limpando praias: Participe de mutirões de limpeza ou organize
+                  um evento com sua comunidade.
+                </p>
+              </li>
+              <li class="item">
+                <i class="material-icons">keyboard_arrow_right</i>
+                <p>
+                  Apoie organizações de conservação: Contribua financeiramente
+                  ou com voluntariado.
+                </p>
+              </li>
+              <li class="item">
+                <i class="material-icons">keyboard_arrow_right</i>
+                <p>
+                  Eduque-se e eduque outros: Compartilhe informações e incentive
+                  práticas sustentáveis em sua rede social.
+                </p>
+              </li>
+            </ul>
+          </section>
+        </section>
+        <section class="section">
+          <h2>Relate Aqui</h2>
+          <p>
+            Visando contribuir com a melhoria das condições dos mares e oceanos
+            do Brasil, desenvolvemos um formulário para o relato de praias em
+            estado precário que necessitam de limpeza. Sua participação é
+            simples e essencial. Clique no botão abaixo e preencha o formulário.
+            Os dados fornecidos serão encaminhados para ONGs e projetos
+            dedicados à redução da poluição em nosso país.
+          </p>
+          <button class="btn-relate">Abrir Form</button>
+        </section>
+      </section>
+      <dialog id="modal" class="modal">
+        <section class="header">
+          <h1>Relate Aqui</h1>
+          <button id="fechar" class="fechar">
+            <i class="fas fa-times"></i>
+          </button>
+        </section>
+        <form id="form" class="form">
+          <div class="form-content">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" placeholder="Digite o seu nome..." />
+            <a>Aqui vai a mensagem de erro</a>
+          </div>
 
-                    <div class="form-content">
-                        <label for="email">Email</label>
-                        <input type="email" id="email"
-                            placeholder="Digite o seu email..." />
-                        <a>Aqui vai a mensagem de erro</a>
-                    </div>
+          <div class="form-content">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Digite o seu email..."
+            />
+            <a>Aqui vai a mensagem de erro</a>
+          </div>
 
-                    <div class="form-content">
-                        <label for="praia">Praia</label>
-                        <input type="text" id="praia"
-                            placeholder="Digite o nome da praia..." />
-                        <a>Aqui vai a mensagem de erro</a>
-                    </div>
+          <div class="form-content">
+            <label for="praia">Praia</label>
+            <input
+              type="text"
+              id="praia"
+              placeholder="Digite o nome da praia..."
+            />
+            <a>Aqui vai a mensagem de erro</a>
+          </div>
 
-                    <div class="form-content">
-                        <label for="descricao">Informação</label>
-                        <textarea id="descricao" name="mensagem" rows="4"
-                            cols="50"
-                            placeholder="Digite uma breve descrição sobre a situação..."></textarea>
-                        <a>Aqui vai a mensagem de erro</a>
-                    </div>
+          <div class="form-content">
+            <label for="descricao">Informação</label>
+            <textarea
+              id="descricao"
+              name="mensagem"
+              rows="4"
+              cols="50"
+              placeholder="Digite uma breve descrição sobre a situação..."
+            ></textarea>
+            <a>Aqui vai a mensagem de erro</a>
+          </div>
 
-                    <button class="submit" id="submit"
-                        type="submit">Enviar</button>
-                </form>
-            </dialog>
-            <div id="alert" class="alert">
-                <span class="closebtn">&times;</span>
-                <span id="alert-message">Esta é uma mensagem de alerta.</span>
-            </div>
-        </main>
-        <footer class="rodape">
-            <img src="src/imgs/logo.png" alt="Logo">
-            <p>&copy;Copyright - Todos os direitos reservados.</p>
-        </footer>
-    </body>
+          <button class="submit" id="submit" type="submit">Enviar</button>
+        </form>
+      </dialog>
+      <div id="alert" class="alert">
+        <span class="closebtn">&times;</span>
+        <span id="alert-message">Esta é uma mensagem de alerta.</span>
+      </div>
+    </main>
+    <footer class="rodape">
+      <img src="src/imgs/logo.png" alt="Logo" />
+      <p>&copy;Copyright - Todos os direitos reservados.</p>
+    </footer>
+  </body>
 </html>

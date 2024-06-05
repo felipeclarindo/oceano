@@ -1,190 +1,189 @@
-@media(max-width: 995px) {
-    .cabecalho .menu .itens {
-        gap: 55px;
-    }
+@media (max-width: 995px) {
+  .cabecalho .menu .itens {
+    gap: 55px;
+  }
 
-    .cabecalho .menu .itens .item, 
-    .cabecalho .menu .itens .item .btn-relate {
-        font-size: 22px;
-    }
+  .cabecalho .menu .itens .item,
+  .cabecalho .menu .itens .item .btn-relate {
+    font-size: 22px;
+  }
 
-    .principal .banner h1 {
-        padding: 15px;
-        font-size: 36px;
-    }
+  .principal .banner h1 {
+    padding: 15px;
+    font-size: 36px;
+  }
 
-    .principal .sections .section h2 {
-        font-size: 28px;
-        margin: 30px 0;
-    }
+  .principal .sections .section h2 {
+    font-size: 28px;
+    margin: 30px 0;
+  }
 
-    .principal .sections .section:nth-child(4) h2 {
-        margin-top: 6px;
-    }
+  .principal .sections .section:nth-child(4) h2 {
+    margin-top: 6px;
+  }
 
-    .principal .sections .section .sub-topico h3 {
-        font-size: 24px;
-    }
+  .principal .sections .section .sub-topico h3 {
+    font-size: 24px;
+  }
 
-    .principal .sections .section .itens .item i {
-        font-size: 33px;
-        margin-right: 10px;
-    }
+  .principal .sections .section .itens .item i {
+    font-size: 33px;
+    margin-right: 10px;
+  }
 
-    .principal .sections .section .btn-relate {
-        font-size: 30px;
-    }
+  .principal .sections .section .btn-relate {
+    font-size: 30px;
+  }
 
-    #modal {
-        max-width: 430px;
-    }
-    
-    #modal .header {
-        padding: 35px;
-    }
+  #modal {
+    max-width: 430px;
+  }
 
-    #modal .header h1 {
-        font-size: 28px;
-    }
+  #modal .header {
+    padding: 35px;
+  }
 
-    #modal .header .fechar {
-        font-size: 28px;
-    }
+  #modal .header h1 {
+    font-size: 28px;
+  }
 
+  #modal .header .fechar {
+    font-size: 28px;
+  }
 
-    .rodape p {
-        font-size: 18px;
-    }
+  .rodape p {
+    font-size: 18px;
+  }
 
-    .rodape img {
-        width: 90px;
-    }
+  .rodape img {
+    width: 90px;
+  }
 }
 
-@media(max-width: 650px) {
-    .cabecalho {
-        max-width: 100vw;
-        justify-content: space-between;
-        position: relative;
-    }
+@media (max-width: 650px) {
+  .cabecalho {
+    max-width: 100vw;
+    justify-content: space-between;
+    position: relative;
+  }
 
-    .cabecalho .logo {
-        width: 60px;
-    }
+  .cabecalho .logo {
+    width: 60px;
+  }
 
-    .cabecalho #burguer {
-        visibility: visible;
-    }
+  .cabecalho #burguer {
+    visibility: visible;
+  }
 
-    .cabecalho .menu {
-        display: none;
-    }
+  .cabecalho .menu {
+    display: none;
+  }
 
-    .principal .banner {
-        max-height: 250px;
-    }
+  .principal .banner {
+    max-height: 250px;
+  }
 
-    .principal .banner h1 {
-        padding: 15px;
-        font-size: 29px;
-    }
+  .principal .banner h1 {
+    padding: 15px;
+    font-size: 29px;
+  }
 
-    .principal .sections .section h2 {
-        font-size: 22px;
-        max-width: 100%;
-    }
+  .principal .sections .section h2 {
+    font-size: 22px;
+    max-width: 100%;
+  }
 
-    .principal .sections .section:nth-child(3) h2 {
-        font-size: 22px;
-        margin: 25px 0;
-    }
-    
-    .principal .sections .section:nth-child(1) h2 {
-        margin: 30px 0;
-    }
+  .principal .sections .section:nth-child(3) h2 {
+    font-size: 22px;
+    margin: 25px 0;
+  }
 
-    .principal .sections .section .sub-topico h3 {
-        font-size: 25px;
-    }
+  .principal .sections .section:nth-child(1) h2 {
+    margin: 30px 0;
+  }
 
-    .principal .sections .section p {
-        font-size: 25px;
-    }
+  .principal .sections .section .sub-topico h3 {
+    font-size: 25px;
+  }
 
-    .principal .sections .section .btn-relate {
-        font-size: 25px;
-        width: 240px;
-        height: 90px;
-    }
+  .principal .sections .section p {
+    font-size: 25px;
+  }
 
-    .principal .sections .section .itens {
-        padding: 0;
-    }
-    
-    .principal .sections .section .itens .item i {
-        font-size: 30px;
-    }
+  .principal .sections .section .btn-relate {
+    font-size: 25px;
+    width: 240px;
+    height: 90px;
+  }
 
-    #modal {
-        max-width: 400px;
-    }
+  .principal .sections .section .itens {
+    padding: 0;
+  }
 
-    .rodape p {
-        font-size: 15px;
-    }
+  .principal .sections .section .itens .item i {
+    font-size: 30px;
+  }
+
+  #modal {
+    max-width: 400px;
+  }
+
+  .rodape p {
+    font-size: 15px;
+  }
 }
 
-@media(max-width: 395px) {
-    .cabecalho .logo {
-        width: 46px;
-    }
+@media (max-width: 395px) {
+  .cabecalho .logo {
+    width: 46px;
+  }
 
-    .cabecalho #burguer {
-        font-size: 35px;
-    }
+  .cabecalho #burguer {
+    font-size: 35px;
+  }
 
-    .principal .banner {
-        max-width: 100vw;
-    }
+  .principal .banner {
+    max-width: 100vw;
+  }
 
-    .principal .banner h1 {
-        font-size: 24px;
-    }
+  .principal .banner h1 {
+    font-size: 24px;
+  }
 
-    .principal .sections .section h2 {
-        font-size: 20px;
-        padding: 10px;
-    }
+  .principal .sections .section h2 {
+    font-size: 20px;
+    padding: 10px;
+  }
 
-    .principal .sections .section:nth-child(3) h2 {
-        margin: 25px 0;
-    }
+  .principal .sections .section:nth-child(3) h2 {
+    margin: 25px 0;
+  }
 
-    .principal .sections .section p {
-        font-size: 16px;
-    }
+  .principal .sections .section p {
+    font-size: 16px;
+  }
 
-    .principal .sections .section .sub-topico h3 {
-        font-size: 18.5px;
-    }
+  .principal .sections .section .sub-topico h3 {
+    font-size: 18.5px;
+  }
 
-    .principal .sections .section .itens .item i {
-        font-size: 25px;
-    }
+  .principal .sections .section .itens .item i {
+    font-size: 25px;
+  }
 
-    #modal {
-        max-width: 90vw;
-    }
+  #modal {
+    max-width: 90vw;
+  }
 
-    .rodape {
-        max-height: 130px;
-    }
+  .rodape {
+    max-height: 130px;
+  }
 
-    .rodape img {
-        width: 70px;
-    }
+  .rodape img {
+    width: 70px;
+  }
 
-    .rodape p {
-        font-size: 12px;
-    }
+  .rodape p {
+    font-size: 12px;
+  }
 }
