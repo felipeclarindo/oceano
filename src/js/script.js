@@ -8,8 +8,6 @@ const descricao = document.querySelector("#descricao");
 // Pegando elementos do menu
 const buttonMenu = document.querySelector(".btn-burguer");
 const menu = document.querySelector(".menu");
-// Definindo variavel para validação
-let PERMITIDO = false
 
 buttonMenu.addEventListener("click", () => {
   menu.classList.toggle("ativo");
@@ -26,7 +24,6 @@ form.addEventListener("submit", (event) => {
   let validation3 = verificarInputPraia(validation2);
   let validation4 = verificarInputDescricao(validation3);
   if (validation1 && validation2 && validation3 && validation4) {
-    PERMITIDO = true;
     fetch('http://127.0.0.1:5000/relatos/post', {
       method: 'POST',
       headers: {
@@ -43,16 +40,11 @@ form.addEventListener("submit", (event) => {
         if (!response.ok) {
           createAlert('Erro ao enviar os dados', "warning");
         } else {
-          if(PERMITIDO === true) {
             createAlert('Dados enviados com sucesso!', "warning");
-          }
         }
       })
-      .then(data => {
-        createAlert(data.message, "warning");
-      })
       .catch(error => {
-        createAlert('Erro ao enviar os dados:', "warning");
+        createAlert('Erro ao conectar com o servidor.', "warning");
       });
   }
 })
