@@ -1,8 +1,14 @@
-from database.tools.validations import validate_descricao, validate_email, validate_name, validate_praia
-from database.tools.utils import EstadoUser, check_user_state, datetoday
 from dataclasses import dataclass
 from config import connect
 import json
+import sys
+import os
+
+# Adicione o diretório raiz ao sys.path
+sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+
+from database.tools.validations import validate_descricao, validate_email, validate_name, validate_praia
+from database.tools.utils import EstadoUser, check_user_state, datetoday
 
 @dataclass
 class Crud:
