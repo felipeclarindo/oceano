@@ -37,6 +37,7 @@
 
   #modal {
     max-width: 430px;
+    max-height: 100vh;
   }
 
   #modal .header {
@@ -133,7 +134,7 @@
   }
 }
 
-@media (max-width: 395px) {
+@media (max-width: 435px) {
   .cabecalho .logo {
     width: 46px;
   }
@@ -173,6 +174,14 @@
 
   #modal {
     max-width: 90vw;
+  }
+
+  #modal .form-content label {
+    font-size: 18px;
+  }
+
+  #modal .form-content input {
+    font-size: 15px;
   }
 
   .rodape {

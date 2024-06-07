@@ -58,7 +58,7 @@ const verificarInputNome = (response) => {
     // Verificando dado anterior...
     if (response) {
       // Acionando alerta
-      createAlert("O Nome não pode ficar vazio.", "warning");
+      createAlert("O nome não pode ficar vazio.", "warning");
     }
     return false;
   } else if (!isNaN(nomeValue)) {
@@ -179,8 +179,8 @@ const verificarInputDescricao = (response) => {
 
 // Criando alerta
 const createAlert = (message, type) => {
-  var alertBox = document.getElementById("alert");
-  var alertMessage = document.getElementById("alert-message");
+  let alertBox = document.getElementById("alert");
+  let alertMessage = document.getElementById("alert-message");
   alertMessage.textContent = message;
   // Remover classes anteriores
   alertBox.classList.remove("success", "info", "warning");
@@ -193,7 +193,7 @@ const createAlert = (message, type) => {
   // Esconder o alerta automaticamente após 3 segundos
   setTimeout(() => {
     alertBox.style.display = "none";
-  }, 3000);
+  }, 3500);
 };
 
 // Criando função para mostrar o erro
@@ -225,8 +225,8 @@ const loadModal = () => {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-  var closeBtn = document.querySelector(".closebtn");
-  var alertDiv = document.querySelector(".alert");
+  let closeBtn = document.querySelector(".closebtn");
+  let alertDiv = document.querySelector(".alert");
 
   // Definir display como none ao fechar
   closeBtn.addEventListener("click", function () {
